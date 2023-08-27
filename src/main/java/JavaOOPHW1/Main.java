@@ -1,7 +1,7 @@
 package JavaOOPHW1;
 
 import static JavaOOPHW1.ListTovar.getShop;
-import static JavaOOPHW1.User.custmoerlist;
+import static JavaOOPHW1.User.customerlist;
 
 
 public class Main {
@@ -27,7 +27,7 @@ public class Main {
         secondtuser.buy(item1);
 
 
-        System.out.println(custmoerlist);
+        System.out.println(customerlist);
         System.out.println("Store has= " + getShop());
 
 

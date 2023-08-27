@@ -10,7 +10,7 @@ public class User {
     private String password;
     private Basket userbasket = new Basket();
 
-    static List<User> custmoerlist = new ArrayList<>();
+    static List<User> customerlist = new ArrayList<>();
 
     public User(String login) {
         this.login = login;
@@ -35,12 +35,12 @@ public class User {
     }
 
     public void addCustomerToList(User customer){
-        custmoerlist.add(customer);
+        customerlist.add(customer);
     }
 
     @Override
     public String toString() {
         return "Customer{" +
-                "login='" + login + "   " + userbasket + '}';
+                "name=" + login + "  " + userbasket + '}';
     }
 }
