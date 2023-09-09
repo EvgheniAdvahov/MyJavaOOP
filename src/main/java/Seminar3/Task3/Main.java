@@ -22,7 +22,7 @@ public class Main {
         } else if (gameNumber.equals("3")) {
             System.out.println("You choose game- Numbers");
         } else {
-            System.out.println("Default choise is game- Numbers");
+            System.out.println("Default choice is game- Numbers");
         }
         System.out.println("You could restart restart the game by typing \"restart\" ");
 

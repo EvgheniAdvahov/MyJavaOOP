@@ -1,6 +1,5 @@
 package JavaOOPHW1;
 
-import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,7 +7,7 @@ import java.util.List;
 
 import static JavaOOPHW1.Category.category;
 
-@Data
+
 public class ListTovar {
     private String name;
     private double price;

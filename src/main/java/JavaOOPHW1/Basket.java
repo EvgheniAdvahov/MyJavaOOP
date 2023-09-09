@@ -1,13 +1,13 @@
 package JavaOOPHW1;
 
-import lombok.Data;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static JavaOOPHW1.ListTovar.shop;
 
-@Data
+
 public class Basket {
     private List<ListTovar> basket = new ArrayList<>();
 

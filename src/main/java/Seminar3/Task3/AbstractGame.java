@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Random;
 
 @Data
-public abstract class AbstractGame implements Game{
+public abstract class AbstractGame implements Game {
 
     private Integer sizeWord;
     private Integer maxTry;
@@ -14,12 +14,11 @@ public abstract class AbstractGame implements Game{
     GameStatus gameStatus = GameStatus.INIT;
 
 
-
     /**
-     * @apiNote метод предзаполняет слова компьютера
      * @return
+     * @apiNote метод предзаполняет слова компьютера
      */
-    public String generateWord(){
+    public String generateWord() {
         List<String> alphavit = generateCharList();
         Random r = new Random();
         String result = "";
@@ -31,9 +30,7 @@ public abstract class AbstractGame implements Game{
         return result;
     }
 
-    abstract List<String> generateCharList();
-
-
+     abstract List<String> generateCharList();
 
 
     @Override
@@ -52,25 +49,25 @@ public abstract class AbstractGame implements Game{
         int bulls = 0;
         int cows = 0;
         for (int i = 0; i < word.length(); i++) {
-            if(word.charAt(i) == value.charAt(i)){
+            if (word.charAt(i) == value.charAt(i)) {
                 bulls++;
                 cows++;
-            } else{
+            } else {
                 for (int j = 0; j < word.length(); j++) {
-                    if(word.charAt(j) == value.charAt(i)){
+                    if (word.charAt(j) == value.charAt(i)) {
                         cows++;
                     }
                 }
             }
         }
-        if(word.length() == bulls ){
+        if (word.length() == bulls) {
             gameStatus = GameStatus.WINNER;
         }
-        if(maxTry == 0 && !gameStatus.equals(GameStatus.WINNER)){
+        if (maxTry == 0 && !gameStatus.equals(GameStatus.WINNER)) {
             gameStatus = GameStatus.LOSE;
         }
 
-        return new Answer(value,bulls,cows);
+        return new Answer(value, bulls, cows);
     }
 
     @Override

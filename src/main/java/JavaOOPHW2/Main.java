@@ -37,7 +37,7 @@ public class Main {
             }
         }
         for (Entity entity : entityList) {
-            System.out.println("Came to finish " + entity.getName());
+            System.out.println(entity.getName() + " Came to finish ");
         }
 
 

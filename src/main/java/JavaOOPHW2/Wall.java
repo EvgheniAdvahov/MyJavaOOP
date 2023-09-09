@@ -6,6 +6,7 @@ public class Wall extends Obstacles {
     public Wall(String name, int height) {
         super(name);
         this.height = height;
+//        Add.Add(this);
     }
 
     public int getHeight() {
