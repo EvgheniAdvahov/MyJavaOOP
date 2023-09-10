@@ -24,6 +24,3 @@
     - вызываем методы ***Import** или **Export*** из ***package Service***
     - вызываем метод ***viewPhoneBook*** из package ***View***
 
-Постарался реализовать модель на картинке
-
-![MVC model.png](ReadmeMD%20299d5924e8f64e60b860b7c56d9ce4e1/MVC_model.png)
