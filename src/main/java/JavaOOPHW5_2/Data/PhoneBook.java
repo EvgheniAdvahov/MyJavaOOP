@@ -1,5 +1,9 @@
 package JavaOOPHW5_2.Data;
 
+/**
+ * Буква S
+ * Класс отвечает только за создание екземпляра. Функционал только getName и setName.
+ */
 public class PhoneBook {
     String name;
 

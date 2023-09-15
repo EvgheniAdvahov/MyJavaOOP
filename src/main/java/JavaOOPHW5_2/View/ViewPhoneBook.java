@@ -1,5 +1,9 @@
 package JavaOOPHW5_2.View;
 
+/**
+ * Буква S.
+ * Функционал только viewPhoneBook
+ */
 public class ViewPhoneBook implements InterfacePhoneBook{
 
     @Override
