@@ -1,9 +1,16 @@
 package JavaOOPHW5_2.Service;
 
-import JavaOOPHW5_2.Data.Format;
+
+/**
+ * Буква О.
+ * С помошью этого интерфейса мы расширяем 2 Класса. Не модифицируя их.
+ * У каждого класса своя имплементация методов
+ * Если у нас появится новый класс ServiceViberPhoneBook мы только в нём переопределим методы
+ */
+
 
 public interface InterfaceServicePhoneBook {
-    String  importBook(String name);
+    String importPhoneBook(String name);
 
-    String exportBook(String name);
+    String exportPhoneBook(String name);
 }

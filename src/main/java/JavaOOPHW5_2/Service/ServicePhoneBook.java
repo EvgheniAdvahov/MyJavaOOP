@@ -4,8 +4,9 @@ import JavaOOPHW5_2.Data.Format;
 
 import java.util.Scanner;
 
+
 public class ServicePhoneBook implements InterfaceServicePhoneBook {
-    public String exportBook(String name){
+    public String exportPhoneBook(String name){
         Format format;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Type \"1\" for PDF format\nType \"2\" for CSV format \nType \"3\" for JSON format");
@@ -25,8 +26,9 @@ public class ServicePhoneBook implements InterfaceServicePhoneBook {
         }
         return name;
     }
-    public String importBook(String name){
+    public String importPhoneBook(String name){
         System.out.println(name + " imported");
         return name;
     }
+
 }
