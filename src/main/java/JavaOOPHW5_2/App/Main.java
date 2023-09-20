@@ -3,11 +3,13 @@ package JavaOOPHW5_2.App;
 import JavaOOPHW5_2.Data.PhoneBook;
 import JavaOOPHW5_2.Data.WhatsUpPhoneBook;
 import JavaOOPHW5_2.Service.*;
+import JavaOOPHW5_2.Controller.MyController;
 
 public class Main {
     public static void main(String[] args) {
-//        MyController controller = new MyController();
-//        controller.startController();
+        MyController controller = new MyController();
+        controller.startController();
+
         /**
          * Буква D
          * Общий интерфейс ExportContacts(набор общих методов для PhoneBook)
